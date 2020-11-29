@@ -1,5 +1,5 @@
 def max(arr):
-    max_num = 0
+    max_num = arr[0]
 
     for i in arr:
         if i >= max_num:
