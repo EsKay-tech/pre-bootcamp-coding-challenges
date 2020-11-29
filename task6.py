@@ -1,15 +1,10 @@
-def max_num(num_1, num_2, num_3):
-    contain = num_1, num_2, num_3
-    num = num_1
+def max(arr):
+    max_num = 0
 
-    for i in contain:
-        if i > num:
-            num = i
-        elif i < -num:
-            num = i
-        elif i == 0:
-            num = i
-    return num
+    for i in arr:
+        if i >= max_num:
+            max_num = i
+    return max_num
 
 
-print(max_num(-150, 0, -100))
+print(max([-150, -130, 0, -1]))
