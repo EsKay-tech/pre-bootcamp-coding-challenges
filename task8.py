@@ -2,7 +2,7 @@ import math
 
 
 def time(num):
-    hours = math.floor(num/60)
+    hours = int(math.floor(num/60))
     minutes = num % 60
 
     if hours > 1 and minutes > 1:
@@ -13,6 +13,10 @@ def time(num):
         print(str(hours) + " hours, " + str(minutes) + " minute")
     elif hours == 1 and minutes > 1:
         print(str(hours) + " hour, " + str(minutes) + " minutes")
+    elif minutes > 1:
+        print(str(minutes), 'minutes')
+    elif minutes == 1:
+        print(str(minutes), 'minute')
 
 
-time(71)
+time(1)
